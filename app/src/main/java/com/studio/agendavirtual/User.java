@@ -2,6 +2,9 @@ package com.studio.agendavirtual;
 
 import com.google.firebase.database.Exclude;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class User {
 
     private String name;
@@ -9,13 +12,17 @@ public class User {
     private String sex;
     private String keyUser;
     private String password;
+    private String uid;
 
-    public User(String name, String email, String sex, String keyUser, String password) {
+    public Map<String, Boolean> users = new HashMap<>();
+
+    public User(String name, String email, String sex, String keyUser, String password, String uid) {
         this.name = name;
         this.email = email;
         this.sex = sex;
         this.keyUser = keyUser;
         this.password = password;
+        this.uid = uid;
     }
 
     public User() { }
@@ -40,4 +47,21 @@ public class User {
     public String getPassword() { return password; }
 
     public void setPassword(String password) { this.password = password; }
+
+    public String getUid() { return uid; }
+
+    public void setUid(String uid) { this.uid = uid; }
+
+    @Exclude
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("name", name);
+        result.put("email", email);
+        result.put("sex", sex);
+        result.put("keyUser", keyUser);
+        result.put("uId", uid);
+        result.put("users", users);
+
+        return result;
+    }
 }

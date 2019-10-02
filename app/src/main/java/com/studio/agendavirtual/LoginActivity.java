@@ -88,8 +88,8 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin = (BootstrapButton)findViewById(R.id.btnLogin);
         btnCancelar = (BootstrapButton)findViewById(R.id.btnCancel);
-        btnRegister = (BootstrapButton)findViewById(R.id.btnStatus);
-        edtLogin = (BootstrapEditText)findViewById(R.id.edtEmailRecovery);
+        btnRegister = (BootstrapButton)findViewById(R.id.btnUpdate);
+        edtLogin = (BootstrapEditText)findViewById(R.id.edtEmail);
         edtPassword = (BootstrapEditText)findViewById(R.id.edtSenha);
         txtRecoveryPassord = (TextView)findViewById(R.id.txtRecoveryPassord);
     }
@@ -139,7 +139,7 @@ public class LoginActivity extends AppCompatActivity {
 
         btnSendEmail = (BootstrapButton)dialog.findViewById(R.id.btnSendEmail);
         btnCancelAlert = (BootstrapButton)dialog.findViewById(R.id.btnCancel);
-        edtEmail = (BootstrapEditText)dialog.findViewById(R.id.edtEmailRecovery);
+        edtEmail = (BootstrapEditText)dialog.findViewById(R.id.edtEmail);
 
         btnSendEmail.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,7 +17,7 @@
         tools:ignore="VectorDrawableCompat" />
 
     <com.beardedhen.androidbootstrap.BootstrapEditText
-        android:id="@+id/edtEmailRecovery"
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -73,7 +73,7 @@
         android:text="Esqueci-se Minha Senha!" />
 
     <com.beardedhen.androidbootstrap.BootstrapButton
-        android:id="@+id/btnStatus"
+        android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

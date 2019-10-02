@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DispositivoAdapter"></activity>
+        <activity android:name=".Perfil"></activity>
+        <activity android:name=".DispositivoAdapter" />
         <activity android:name=".RegistrarDispositivo" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity">

@@ -9,11 +9,13 @@
     android:padding="40dp"
     tools:context=".RegisterActivity">
 
-    <ImageView
+    <com.beardedhen.androidbootstrap.BootstrapThumbnail
+        android:src="@drawable/ic_menu_camera"
+        app:bootstrapBrand="info"
+        app:hasBorder="true"
         android:id="@+id/imgPictureProfile"
         android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/ic_menu_camera" />
+        android:layout_height="150dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -36,7 +38,7 @@
         app:roundedCorners="true" />
 
     <com.beardedhen.androidbootstrap.BootstrapEditText
-        android:id="@+id/edtEmailRecovery"
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -105,7 +107,7 @@
         android:padding="1dp">
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/btnStatus"
+            android:id="@+id/btnUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CADASTAR"

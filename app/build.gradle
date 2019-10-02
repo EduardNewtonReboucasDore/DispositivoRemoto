@@ -33,8 +33,11 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui:0.4.3'
     implementation 'com.firebase:firebase-client-android:2.5.2'
     implementation 'com.google.firebase:firebase-database:18.0.1'
+    implementation 'com.google.firebase:firebase-storage:19.0.1'
 
     implementation 'com.beardedhen:androidbootstrap:2.3.2'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
 
 apply plugin: 'com.google.gms.google-services'

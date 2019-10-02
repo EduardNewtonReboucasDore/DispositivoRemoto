@@ -1,10 +1,7 @@
 package com.studio.agendavirtual;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +46,7 @@ public class DispositivoAdapter extends ArrayAdapter<Dispositivo> {
         convertView = LayoutInflater.from(this.context).inflate(R.layout.activity_dispositivo_adapter,null);
 
         TextView txtNome = (TextView)convertView.findViewById(R.id.txtNomeDispositivo);
-        BootstrapButton btnStatus = (BootstrapButton)convertView.findViewById(R.id.btnStatus);
+        BootstrapButton btnStatus = (BootstrapButton)convertView.findViewById(R.id.btnUpdate);
 
         txtNome.setText(dispositivoPossicao.getNome());
         btnStatus.setText(dispositivoPossicao.getStatus());
